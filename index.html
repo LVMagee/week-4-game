@@ -17,60 +17,75 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+
 </head>
 <body>
-
-	<div class="jumbotron">
-		<h1>Gem Collector</h1>
+	<!-- bootstrap header -->
+	<div class="jumbotron" style="background-color: #87B7C7";>
+		<h1>Trash Collector</h1>
+		<h2>Let's Recycle Some Trash</h2>
 	</div>
+	<!-- game instructions -->
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-body">
-				<p>You will be given a random number to start the game.
-					<br>
-					There are four crystals, each with a different random number assigned to it, click on them to add to your score.
-					<br>	
-					The goal is to match the number exactly, giving yourself a win.  If you go over you will be given a loss.
-					<br>	
-					A new random number will be given once the game is over. This will also reset the value of each crystal.  Good luck and have fun.
-				</p>
-			</div>
+			<div class="panel-body" style="font-size: 18px;">
+				<p>How do I play?</p>
+				<br>
+				There are four recycle bins below, each with a different random number assigned to it, click on them to add to your points.
+				<br>	
+				The goal is to match the number exactly, giving yourself a win.  If you go over you will be given a loss.
+				<br>	
+				A new random number will be given once the game is over. This will also reset the value of each bin.  Good luck and have fun.
+			</p>
 		</div>
-
-		<div class="panel panel-success">
-			<div class="panel-heading">
-				<h3 class="panel-title">Wins:</h3>
-			</div>
-			<div class="panel-body">
-				<p id = "wins"></p>
-			</div>
+	</div>
+	<!-- Win loss area -->
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			<h3 class="panel-title">Wins:</h3>
 		</div>
-		<div class="panel panel-warning">
-			<div class="panel-heading">Loss</h3>
-			</div>
-			<div class="panel-body">
+		<div class="panel-body">
+			<p id = "wins"></p>
+		</div>
+	</div>
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h3 class="panel-title">Loss:</h3>
+		</div>
+		<div class="panel-body">
 			<p id = "loss"></p>
-				
-			</div>
-			
+			<!-- random number, selector buttons -->
 		</div>
-		<div class="well well-lg">
-			<h3>Match This Number:  <span id = "num"></span></h3>
-			
-		</div>
-		<div class="buttons">
-			<div class="btn-group btn-group-lg" role="group" aria-label=""></div>
-			<button type="button" class="btn btn-danger" id ="ruby">Ruby</button>
+	</div>
+	<div class="well well-lg">
+		<h3>Match This Number:  <span id = "num"></span></h3>
+
+		<!-- had enough time to add some images for a better theme -->
+	</div>
+	<div class="buttons">
+		<button id = "ruby"><img src="assets/images/red.jpg"></button>
+		<button id = "emerald"><img src="assets/images/green.jpg"></button>
+		<button id = "diamond"><img src="assets/images/yellow.jpg"></button>
+		<button id = "sapphire"><img src="assets/images/blue.jpg"></button>
+
+		<!-- old gem buttons  -->
+
+		<!-- <div class="btn-group btn-group-lg" role="group" aria-label=""></div> -->
+		<!-- <button type="button" class="btn btn-danger" id ="ruby">Ruby</button>
 			<button type="button" class="btn btn-success" id="emerald">Emerald</button>
 			<button type="button" class="btn btn-default" id="diamond">Diamond</button>
 			<button type="button" class="btn btn-primary" id="sapphire">Sapphire</button>
-		</div>
+		</div> --> 
+
+
+		<!--players points and clear function  -->
 		<div class="panel panel-danger">
 			<div class="panel-heading">
-				<h3>Your Points: <span id ="points"></span></h3>
+				<h3>Your Points: <span id ="points">0</span></h3>
 			</div>
 			<div class="panel-body">
-			<button type="button" class="btn btn-danger" id ="clear">Clear scores</button>
+				<button type="button" class="btn btn-danger" id ="clear">Clear scores</button>
 				
 			</div>
 		</div>

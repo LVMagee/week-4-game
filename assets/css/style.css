@@ -1,8 +1,15 @@
+body {background-image: url("natural.png");}
+
 h1 {text-align: center;}
+
+
+h2 {text-align: center;}
+
 
 p {font-size: 18px;}
 
-
+.jumbotron {background-color: #87B7C7;}
 
 .container {text-align:center;}
 
+.buttons {padding-bottom: 20px;}

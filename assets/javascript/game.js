@@ -2,10 +2,10 @@ $(document).ready(function(){
 
 //game varibles
 var num = Math.floor(Math.random() * 120) + 19;
-var ruby= Math.floor(Math.random() *12) +1;
-var emerald= Math.floor(Math.random() *12) +1;
-var diamond= Math.floor(Math.random() *12) +1;
-var sapphire= Math.floor(Math.random() *12) +1;
+var ruby= Math.floor(Math.random() * 12) + 1;
+var emerald= Math.floor(Math.random() * 12) + 1;
+var diamond= Math.floor(Math.random() * 12) + 1;
+var sapphire= Math.floor(Math.random() * 12) + 1;
 var points 	= 0
 var wins = 0
 var loss = 0
@@ -21,12 +21,12 @@ $("#loss").text(loss);
 
 //game reset to new randoms
 function reset(){
-	num = Math.floor(Math.random() * 120) +19;
+	num = Math.floor(Math.random() * 120) + 19;
 	$("#num").text(num);
-	ruby = Math.floor(Math.random() *12) +1;
-	emerald = Math.floor(Math.random() *12) +1;
-	diamond = Math.floor(Math.random() *12) +1;
-	sapphire = Math.floor(Math.random() *12) +1;
+	ruby = Math.floor(Math.random() * 12) + 1;
+	emerald = Math.floor(Math.random() * 12) + 1;
+	diamond = Math.floor(Math.random() * 12) + 1;
+	sapphire = Math.floor(Math.random() * 12) + 1;
 	points = 0;
 	$("#points").text(points);
 } 
