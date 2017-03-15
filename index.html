@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gem Game</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="jumbotron">
+		<h1>Gem Collector</h1>
+	</div>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p>You will be given a random number to start the game.
+					<br>
+					There are four crystals, each with a different random number assigned to it, click on them to add to your score.
+					<br>	
+					The goal is to match the number exactly, giving yourself a win.  If you go over you will be given a loss.
+					<br>	
+					A new random number will be given once the game is over. This will also reset the value of each crystal.  Good luck and have fun.
+				</p>
+			</div>
+		</div>
+
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Wins:</h3>
+			</div>
+			<div class="panel-body">
+				<p id = "wins"></p>
+			</div>
+		</div>
+		<div class="panel panel-warning">
+			<div class="panel-heading">Loss</h3>
+			</div>
+			<div class="panel-body">
+			<p id = "loss"></p>
+				
+			</div>
+			
+		</div>
+		<div class="well well-lg">
+			<h3>Match This Number:  <span id = "num"></span></h3>
+			
+		</div>
+		<div class="buttons">
+			<div class="btn-group btn-group-lg" role="group" aria-label=""></div>
+			<button type="button" class="btn btn-danger" id ="ruby">Ruby</button>
+			<button type="button" class="btn btn-success" id="emerald">Emerald</button>
+			<button type="button" class="btn btn-default" id="diamond">Diamond</button>
+			<button type="button" class="btn btn-primary" id="sapphire">Sapphire</button>
+		</div>
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h3>Your Points: <span id ="points"></span></h3>
+			</div>
+			<div class="panel-body">
+			<button type="button" class="btn btn-danger" id ="clear">Clear scores</button>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<script src = "assets/javascript/game.js"></script>
+
+</body>
+</html>
