@@ -1,2 +1,3 @@
-# week-4-game
-Bootcamp jQuery Game
+# Recycle Game
+
+https://lvmagee.github.io/week-4-game/
